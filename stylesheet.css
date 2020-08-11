@@ -55,6 +55,7 @@
 	background-size: cover;
 	color: white;
 	text-align: center;
+	background-repeat: no-repeat;
   }
   
   .top-wrapper h1 {
@@ -189,8 +190,8 @@
   }
   
   .message-wrapper {
+	height : 385px;
 	border-bottom: 1px solid #eee;
-	padding-bottom: 80px;
 	text-align: center;
   }
   
@@ -199,6 +200,7 @@
 	background-color: #5dca88;
 	cursor: pointer;
 	box-shadow: 0px 7px #1a7940;
+	margin-bottom : 50px;
   }
   
   .message:active {
@@ -208,21 +210,55 @@
   }
   
   footer img {
-	width: 125px;
+	width: 100px;
   }
   
   footer p {
 	color: #b3aeb5;
 	font-size: 12px;
+	float : left ; 
   }
   
   footer {
 	padding-top: 30px;
-	padding-bottom: 20px;
+	float : left ; 
   }
+
+  footer h1{
+	margin: 0 0;
+  }
+
+  .footer-container img {
+	width: 60px;
+	height: 50px;
+	margin-left : 30px;
+	float : left;
+	}
+
+  .footer-container h1 {
+	font-size : 40px;
+	font-family : serif;
+	margin : 0 0;
+	margin-left : 110px;
+	color : black;
+  }
+
+  .footer-container span {
+	font-size : 20px;
+	color : black;
+	font-family : monospace;
+	margin : 0 0;
+	padding-left : 20px;	  
+  }
+
+  .footer-container p {
+	margin-left : 110px;
+	font-size : 16px;
+	margin-top : -10px;
+  }  
   
   .menu-icon {
-	color: white;
+	color:black;
 	float: right;
 	font-size: 25px;
 	padding: 21px 0;
@@ -242,10 +278,6 @@
 	.lesson-wrapper {
 	  height: 990px;
 	}
-  
-	footer {
-	  text-align: center;
-	}
   }
   
   @media all and (max-width: 750px) {
@@ -260,8 +292,8 @@
   
   @media all and (max-width: 670px) {
 	.header-right {
-	  display: none;
-	}
+		display: none;
+	  }
   
 	.menu-icon {
 	  display: block;
@@ -329,8 +361,8 @@
 	margin-left : 110px;
 	font-size : 16px;
 	margin-top : -10px;
-  }  
-
+  }
+    
   @media(max-width:670px) {
 	  .top-wrapper h1 {
 		 text-align: center ;
@@ -354,10 +386,13 @@
 		background-size : 100% ;
 		margin-top : 65px;
 		padding: 10px;
-		height :230px;
 	}
+	 .btn {
+		 width : 100%;
+	 }
+
 	 .lesson-wrapper {
-		 margin-top : 180px;
+		 margin-top : 10px;
 	 }
 	 .header-left img {
 		width: 50px;
@@ -387,18 +422,17 @@
 			height: 40px;
 			margin-top : 2px;
 			margin-left : 20px;
-			float : left;
+			float : left ;
 			}
-		
 		  .footer-container h1 {
 			font-size : 30px;
 			font-family : serif;
 			margin : 0 0;
 			padding-top : 5px;
-			margin-right : 170px;
+			padding-left : 5px;
 			color : black;
+			float : left ;
 		  }
-		
 		  .footer-container span {
 			font-size : 15px;
 			color : black;
@@ -406,10 +440,12 @@
 			margin : 0 0;  
 			padding-left : 8px;
 		  }
-		
 		  .footer-container p {
-			margin-left : 15px;
+			margin-left : 75px;
 			font-size : 12px;
-			margin-top : -5px;
-		  }  
+			padding-top: -10px;
+		  }
+		  .message-wrapper {
+			  height : 940px;
+		  }		  
   }
